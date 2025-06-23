@@ -1,6 +1,14 @@
 #include <iostream>
 using namespace std;
-//Convertir Celsius a Fahrenheit
+
 float celsiusAFahrenheit(float celsius) {
-    return (celsius * 9.0 / 5.0) + 32;
+    return (celsius * 9 / 5) + 32;
+}
+
+int main() {
+    float c;
+    cout << "Ingrese temperatura en celsius: ";
+    cin >> c;
+    cout << "Fahrenheit: " << celsiusAFahrenheit(c) << " °F" << endl;
+    return 0;
 }
